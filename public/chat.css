@@ -5,14 +5,39 @@
 
 body {
   font-family: 'avenir next', avenir, sans-serif;
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  height:100vh;
-  padding:var(--spacing-medium);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  padding: var(--spacing-medium);
+}
+
+#messages {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-bottom: var(--spacing-medium);
+  border: 1px solid #ccc;
+  padding: var(--spacing-small);
+  background-color: #f9f9f9;
 }
 
 input {
   width: 100%;
-  padding:var(--spacing-small);
+  padding: var(--spacing-small);
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: var(--spacing-small) var(--spacing-medium);
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
 }
